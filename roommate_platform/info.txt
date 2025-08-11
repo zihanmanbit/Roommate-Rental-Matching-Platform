@@ -1,0 +1,97 @@
+-- Database: roommate_rental_db
+
+USE roommate_rental_db;
+
+-- Tables:
+
+-- USERS table
+
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(255),
+    age INT,
+    gender ENUM('Male', 'Female', 'Other'),
+    role ENUM('tenant', 'owner'),
+    contact VARCHAR(20),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- PROPERTIES table
+
+CREATE TABLE properties (
+    property_id INT AUTO_INCREMENT PRIMARY KEY,
+    owner_id INT,
+    title VARCHAR(100),
+    description TEXT,
+    address VARCHAR(255),
+    location VARCHAR(100),
+    rent DECIMAL(10,2),
+    available_from DATE,
+    gender_preference ENUM('Male', 'Female', 'Any'),
+    amenities TEXT,
+    status ENUM('Available', 'Occupied') DEFAULT 'Available',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (owner_id) REFERENCES users(user_id)
+);
+
+-- PREFERENCES table
+
+CREATE TABLE preferences (
+    preference_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    budget_min DECIMAL(10,2),
+    budget_max DECIMAL(10,2),
+    pets_allowed BOOLEAN,
+    smoking BOOLEAN,
+    cleanliness_level TINYINT, -- 1 to 5 scale
+    sleep_schedule ENUM('Early Bird', 'Night Owl', 'Flexible'),
+    preferred_location VARCHAR(100),
+    gender_preference ENUM('Male', 'Female', 'Any'),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+-- RENTAL REQUESTS table
+
+CREATE TABLE requests (
+    request_id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_id INT,
+    receiver_id INT,
+    property_id INT,
+    message TEXT,
+    status ENUM('Pending', 'Accepted', 'Rejected') DEFAULT 'Pending',
+    reply TEXT,
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (sender_id) REFERENCES users(user_id),
+    FOREIGN KEY (receiver_id) REFERENCES users(user_id),
+    FOREIGN KEY (property_id) REFERENCES properties(property_id)
+);
+
+-- ROOMMATE CONNECTION REQUESTS table
+
+CREATE TABLE roommate_requests (
+    request_id INT AUTO_INCREMENT PRIMARY KEY,
+    sender_id INT,
+    receiver_id INT,
+    status ENUM('Pending', 'Accepted', 'Rejected') DEFAULT 'Pending',
+    sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (sender_id) REFERENCES users(user_id),
+    FOREIGN KEY (receiver_id) REFERENCES users(user_id)
+);
+
+
+-- RATINGS table
+
+CREATE TABLE ratings (
+    rating_id INT AUTO_INCREMENT PRIMARY KEY,
+    reviewer_id INT,
+    reviewed_user_id INT,
+    rating TINYINT, -- Scale of 1 to 5
+    comment TEXT,
+    rated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (reviewer_id) REFERENCES users(user_id),
+    FOREIGN KEY (reviewed_user_id) REFERENCES users(user_id)
+);
+
+

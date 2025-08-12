@@ -87,7 +87,7 @@ These tables are related through foreign keys ensuring data integrity and suppor
 
 A comprehensive video showcasing the running project, all implemented functionalities, frontend and backend overview, and database design explanation is available at:
 
-[https://youtu.be/ss-KB3MBHMQ](https://youtu.be/ss-KB3MBHMQ)
+[https://youtu.be/xA-JCRY2f6Y?feature=shared](https://youtu.be/xA-JCRY2f6Y?feature=shared)
 
 ---
 

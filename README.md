@@ -2,7 +2,7 @@
 
 ---
 
-## Project Overview
+## 🧾 Project Overview
 
 The **Roommate & Rental Matching Platform** is a comprehensive web application aimed at helping tenants and property owners connect efficiently. It facilitates finding suitable roommates and rental properties based on detailed user preferences like budget, gender, lifestyle habits, and location.
 
@@ -16,7 +16,7 @@ This platform supports:
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
 - Design and implement a normalized MySQL database with proper foreign keys and constraints.
 - Develop a dynamic PHP backend integrating CRUD operations, joins, triggers, and stored procedures.
@@ -26,7 +26,7 @@ This platform supports:
 
 ---
 
-## Functionalities Implemented 🛠️ 
+## 🛠️ Functionalities Implemented 
 
 - User registration and login with role-based access (tenant or owner).
 - Profile management for tenants and owners.
@@ -41,7 +41,7 @@ This platform supports:
 
 ---
 
-## Database Tables Overview
+## 🗄️ Database Tables Overview
 
 Our project database consists of the following main tables:
 
@@ -61,7 +61,7 @@ These tables are related through foreign keys ensuring data integrity and suppor
 
 ---
 
-## ER Diagrams 📊
+## 📊 ER Diagrams
 
 
 ### ER Diagram:
@@ -83,7 +83,7 @@ These tables are related through foreign keys ensuring data integrity and suppor
 
 ---
 
-## Video Demonstration 🎥
+## 🎥Video Demonstration
 
 A comprehensive video showcasing the running project, all implemented functionalities, frontend and backend overview, and database design explanation is available at:
 
@@ -91,7 +91,7 @@ A comprehensive video showcasing the running project, all implemented functional
 
 ---
 
-## Repository Files 📂
+## 📂 Repository Files
 
 This repository contains:
 
@@ -101,16 +101,16 @@ This repository contains:
 - Database files:  
   `roommate_rental_db.sql`
 
-- ER diagram images:  
-  `rrdb_er_diagram_with_cardinalities.png`  
+- ER diagram images:   
   `rrdb_er_diagram.jpg`
+  `rrdb_er_diagram_with_cardinalities.png` 
 
 - Other documentation:  
   `info.txt`
 
 ---
 
-## How to Run
+## ⚙️ How to Run
 
 1. Import the SQL file `roommate_rental_db.sql` into your MySQL database.
 2. Configure database credentials in `db.php`.
@@ -120,16 +120,26 @@ This repository contains:
 
 ---
 
-# Group Name  
-## Team 07
+## 💻 Technologies Used
 
-## Team Members & Contributions 👨‍💻
+- **Frontend:** HTML5, CSS3, JavaScript (via Bootstrap bundle), Font Awesome 6.4  
+- **Backend:** PHP 
+- **Database:** MySQL
+- **Server:** XAMPP (Apache + MySQL) 
+- **Tools:** phpMyAdmin
+
+---
+
+## 👥 Group Name  
+### Team 07
+
+### Team Members & Contributions:
 
 
 | Name           | Student ID   | Contribution Summary                              |
 |----------------|--------------|-------------------------------------------------|
 | Zihan Manbit   | 231-115-028  | Backend development (database, PHP, logic), full PHP integration, as well as contributing to the frontend (UI design and integration). |
-| Ashik Mahmud   | 231-115-002  | ER diagram and schema design, and contributed to the frontend UI design |
+| Ashik Mahmud   | 231-115-002  | ER diagram and schema design, and contributed to the frontend UI design. |
 | Ashok Roy Antor| 231-115-040  | Contributed by creating fake data for testing and writing help text for UI fields. |
 
  

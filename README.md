@@ -102,11 +102,10 @@ This repository contains:
   `roommate_rental_db.sql`
 
 - ER diagram images:   
-  `rrdb_er_diagram.jpg`
-  `rrdb_er_diagram_with_cardinalities.png` 
+  `rrdb_er_diagram.jpg`, `rrdb_er_diagram_with_cardinalities.png` 
 
-- Other documentation:  
-  `info.txt`
+- Other documentations:  
+  `info.txt`, `index.html`
 
 ---
 

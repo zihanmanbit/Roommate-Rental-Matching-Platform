@@ -96,7 +96,7 @@ A comprehensive video showcasing the running project, all implemented functional
 This repository contains:
 
 - Source PHP files:  
-`db.php`, `register.php`, `login.php`, `dashboard.php`, `logout.php`, `add_property.php`, `browse_properties.php`, `tenant_preference.php`, `edit_property.php`, `delete_property.php`, `send_request.php`, `view_requests.php`, `handle_request.php`, `my_requests.php`, `submit_rating.php`, `property_details.php`, `roommate_connection.php`, `tenant-tenant_send_request.php`, `tenant-tenant_view_requests.php`, `tenant-tenant_handle_request.php`, `tenant-tenant_my_requests.php`.
+`db.php`, `register.php`, `login.php`, `dashboard.php`, `logout.php`, `add_property.php`, `browse_properties.php`, `tenant_preference.php`, `edit_property.php`, `delete_property.php`, `send_request.php`, `view_requests.php`, `handle_request.php`, `my_requests.php`, `submit_rating.php`, `property_details.php`, `roommate_connection.php`, `tenant-tenant_send_request.php`, `tenant-tenant_view_requests.php`, `tenant-tenant_handle_request.php`, `tenant-tenant_my_requests.php`
 
 - Database files:  
   `roommate_rental_db.sql`

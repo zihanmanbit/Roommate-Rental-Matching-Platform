@@ -73,9 +73,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </style>
 </head>
 <body>
+
+<!-- Blue Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.php">
+      <i class="fa-solid fa-house-user me-2"></i>Roommate & Rental Platform
+    </a>
+
+    <?php if (basename($_SERVER['PHP_SELF']) !== 'login.php' && basename($_SERVER['PHP_SELF']) !== 'register.php'): ?>
+      <div>
+        <a href="login.php" class="btn btn-outline-light btn-sm me-2">
+          <i class="fa-solid fa-right-to-bracket me-1"></i> Login
+        </a>
+        <a href="register.php" class="btn btn-light btn-sm">
+          <i class="fa-solid fa-user-plus me-1"></i> Register
+        </a>
+      </div>
+    <?php endif; ?>
+    
+  </div>
+</nav>
+
 <div class="form-container shadow-sm">
   <h2 class="mb-4 text-center"><i class="fa-solid fa-user-plus me-2"></i>Register</h2>
-
   <?php if (!empty($errors)): ?>
     <div class="alert alert-danger">
       <ul class="mb-0">

@@ -2,6 +2,10 @@
 
 ---
 
+![Home Page Screenshot](roommate_platform/home_page_ss.jpeg)
+
+---
+
 ## 🧾 Project Overview
 
 The **Roommate & Rental Matching Platform** is a comprehensive web application aimed at helping tenants and property owners connect efficiently. It facilitates finding suitable roommates and rental properties based on detailed user preferences like budget, gender, lifestyle habits, and location.
@@ -46,15 +50,10 @@ This platform supports:
 Our project database consists of the following main tables:
 
 - **users:** Stores user information such as name, email, hashed password, age, gender, role (tenant/owner), and contact details.
-
 - **properties:** Contains rental listings posted by owners including title, description, address, location, rent, availability, gender preference, amenities, and status.
-
 - **preferences:** Tenant roommate preferences including budget range, pets allowed, smoking habits, cleanliness level, sleep schedule, preferred location, and gender preference.
-
 - **requests:** Rental connection requests sent by tenants to property owners, including messages and status tracking (pending, accepted, rejected).
-
 - **roommate_requests:** Requests between tenants to connect as roommates, including status and timestamps.
-
 - **ratings:** Stores ratings and comments given by users after stays, capturing reviewer, reviewed user, rating score, and review date.
 
 These tables are related through foreign keys ensuring data integrity and supporting complex queries for matching and filtering.
@@ -83,7 +82,7 @@ These tables are related through foreign keys ensuring data integrity and suppor
 
 ---
 
-## 🎥Video Demonstration
+## 🎥 Video Demonstration
 
 A comprehensive video showcasing the running project, all implemented functionalities, frontend and backend overview, and database design explanation is available at:
 
@@ -143,6 +142,14 @@ This repository contains:
 
  
 **Batch: CSE-58, Section A**
+
+---
+
+## 🌐 Live Link
+
+You can explore the live version at:
+
+[https://zm-cse-58.gt.tc/](https://zm-cse-58.gt.tc/)
 
 ---
 

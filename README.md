@@ -60,33 +60,22 @@ These tables are related through foreign keys ensuring data integrity and suppor
 
 ---
 
-## 📊 ER Diagrams
+## 📊 ER Diagram
 
-
-### ER Diagram:
-
-
-
-![ER Diagram](roommate_platform/rrdb_er_diagram.jpg)
-
-
-
-
-### ER Diagram (with cardinalities):
 
 
 ![ER Diagram (with cardinalities)](roommate_platform/rrdb_er_diagram_with_cardinalities.png)
 
 
-*Both ER diagrams are included in the repository as `rrdb_er_diagram.jpg` and `rrdb_er_diagram_with_cardinalities.png` respectively.*
+
 
 ---
 
 ## 🎥 Video Demonstration
 
-A comprehensive video showcasing the running project, all implemented functionalities, frontend and backend overview, and database design explanation is available at:
+A video showcasing the running project and all implemented functionalities is available at:
 
-[https://youtu.be/xA-JCRY2f6Y?feature=shared](https://youtu.be/xA-JCRY2f6Y?feature=shared)
+[https://youtu.be/Yh2ImETw3eY](https://youtu.be/Yh2ImETw3eY)
 
 ---
 
@@ -100,11 +89,11 @@ This repository contains:
 - Database files:  
   `roommate_rental_db.sql`
 
-- ER diagram images:   
-  `rrdb_er_diagram.jpg`, `rrdb_er_diagram_with_cardinalities.png` 
+- ER diagram image:   
+  `rrdb_er_diagram_with_cardinalities.png` 
 
 - Other documentations:  
-  `info.txt`, `index.html`
+  `info.txt`
 
 ---
 
@@ -128,23 +117,6 @@ This repository contains:
 
 ---
 
-## 👥 Group Name  
-### Team 07
-
-### Team Members & Contributions:
-
-
-| Name           | Student ID   | Contribution Summary                              |
-|----------------|--------------|-------------------------------------------------|
-| Zihan Manbit   | 231-115-028  | Backend development (database, PHP, logic), full PHP integration, as well as contributing to the frontend (UI design and integration). |
-| Ashik Mahmud   | 231-115-002  | ER diagram and schema design, and contributed to the frontend UI design. |
-| Ashok Roy Antor| 231-115-040  | Contributed by creating fake data for testing and writing help text for UI fields. |
-
- 
-**Batch: CSE-58, Section A**
-
----
-
 ## 🌐 Live Link
 
 You can explore the live version at:
@@ -153,5 +125,16 @@ You can explore the live version at:
 
 ---
 
-*Thank you for reviewing our project!*
+## 📜 License
 
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+**Zihan Manbit**
+
+GitHub: [https://github.com/zihanmanbit](https://github.com/zihanmanbit)
+
+---

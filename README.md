@@ -117,6 +117,16 @@ This repository contains:
 
 ---
 
+## 🧩 Future Enhancements  
+  
+- Stronger authentication with hashing and validation.
+- Real-time messaging system.
+- AI-driven matching.
+- Responsive mobile-first design.
+- Analytics dashboards for owners/admins. 
+
+---
+
 ## 🌐 Live Link
 
 You can explore the live version at:
